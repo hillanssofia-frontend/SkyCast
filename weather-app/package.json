@@ -1,0 +1,19 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "A simple weather application that fetches and displays weather data.",
+  "main": "src/js/main.js",
+  "scripts": {
+    "build": "sass src/scss/main.scss dist/style.css",
+    "start": "live-server src"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "sass": "^1.32.0",
+    "live-server": "^1.2.1"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}

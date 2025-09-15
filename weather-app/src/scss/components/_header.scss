@@ -1,0 +1,29 @@
+.header {
+    background-color: $header-bg-color;
+    color: $header-text-color;
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.nav-item {
+    margin: 0 15px;
+    text-decoration: none;
+    color: $nav-link-color;
+    transition: color 0.3s;
+
+    &:hover {
+        color: $nav-link-hover-color;
+    }
+}
