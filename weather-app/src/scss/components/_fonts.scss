@@ -1,0 +1,50 @@
+// Font Family Variable
+$font-bricolage: "Bricolage Grotesque", sans-serif;
+
+// Font Weight Variables
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// Utility Classes
+.bricolage-light {
+  font-family: $font-bricolage;
+  font-optical-sizing: auto;
+  font-weight: $font-weight-light;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.bricolage-regular {
+  font-family: $font-bricolage;
+  font-optical-sizing: auto;
+  font-weight: $font-weight-regular;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.bricolage-medium {
+  font-family: $font-bricolage;
+  font-optical-sizing: auto;
+  font-weight: $font-weight-medium;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.bricolage-semibold {
+  font-family: $font-bricolage;
+  font-optical-sizing: auto;
+  font-weight: $font-weight-semibold;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.bricolage-bold {
+  font-family: $font-bricolage;
+  font-optical-sizing: auto;
+  font-weight: $font-weight-bold;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
