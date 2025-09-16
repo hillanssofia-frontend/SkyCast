@@ -1,19 +1,12 @@
-@import 'variables';
-@import 'mixins';
-@import 'components/header';
-@import 'components/weather-card';
-@import 'components/forecast';
-
 // Main styles for the weather app
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #e44a4a;
     margin: 0;
     padding: 0;
 }
 
 h1 {
-    color: $primary-color;
     text-align: center;
 }
 
@@ -21,4 +14,8 @@ h1 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+}
+
+body {
+    border: 10px solid blue !important;
 }

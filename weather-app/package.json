@@ -4,9 +4,8 @@
   "description": "A simple weather application that fetches and displays weather data.",
   "main": "src/js/main.js",
   "scripts": {
-    "build": "sass src/scss/main.scss dist/style.css",
-    "start": "live-server src",
-    "sass": "sass --watch src/scss:dist",
+  "build": "sass src/scss/main.scss app/main.css",
+  "sass": "sass --watch src/scss:app",
     "dev": "live-server"
     
   },
