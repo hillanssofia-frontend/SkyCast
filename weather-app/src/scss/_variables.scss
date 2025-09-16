@@ -1,9 +1,44 @@
-$color-primary: #3498db;
-$color-secondary: #2ecc71;
-$color-background: #ecf0f1;
-$color-text: #2c3e50;
+// ============================
+// Color Variables
+// ============================
+$neutral-900: #00212C;
+$neutral-800: #262540;
+$neutral-700: #302F4A;
+$neutral-600: #3C385E;
+$neutral-300: #ACACB7;
+$neutral-200: #D4D3D9;
+$neutral-0:   #FFFFFF;
 
-$font-family: 'Arial, sans-serif';
-$font-size-base: 16px;
-$font-size-large: 24px;
-$font-size-small: 14px;
+$orange-500:  #FF820A;
+
+$blue-500:    #4658D9;
+$blue-700:    #2B19BC;
+
+
+// ============================
+// Utility Classes
+// ============================
+
+// Background Colors
+@each $name, $color in (
+  "neutral-900": $neutral-900,
+  "neutral-800": $neutral-800,
+  "neutral-700": $neutral-700,
+  "neutral-600": $neutral-600,
+  "neutral-300": $neutral-300,
+  "neutral-200": $neutral-200,
+  "neutral-0":   $neutral-0,
+  "orange-500":  $orange-500,
+  "blue-500":    $blue-500,
+  "blue-700":    $blue-700
+) {
+  .bg-#{$name} {
+    background-color: $color !important;
+  }
+  .text-#{$name} {
+    color: $color !important;
+  }
+  .border-#{$name} {
+    border-color: $color !important;
+  }
+}
