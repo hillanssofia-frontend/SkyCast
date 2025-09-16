@@ -1,22 +1,266 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #e44a4a;
-  margin: 0;
-  padding: 0;
+.bg-neutral-900 {
+  background-color: #00212C !important;
 }
 
-h1 {
+.text-neutral-900 {
+  color: #00212C !important;
+}
+
+.border-neutral-900 {
+  border-color: #00212C !important;
+}
+
+.bg-neutral-800 {
+  background-color: #262540 !important;
+}
+
+.text-neutral-800 {
+  color: #262540 !important;
+}
+
+.border-neutral-800 {
+  border-color: #262540 !important;
+}
+
+.bg-neutral-700 {
+  background-color: #302F4A !important;
+}
+
+.text-neutral-700 {
+  color: #302F4A !important;
+}
+
+.border-neutral-700 {
+  border-color: #302F4A !important;
+}
+
+.bg-neutral-600 {
+  background-color: #3C385E !important;
+}
+
+.text-neutral-600 {
+  color: #3C385E !important;
+}
+
+.border-neutral-600 {
+  border-color: #3C385E !important;
+}
+
+.bg-neutral-300 {
+  background-color: #ACACB7 !important;
+}
+
+.text-neutral-300 {
+  color: #ACACB7 !important;
+}
+
+.border-neutral-300 {
+  border-color: #ACACB7 !important;
+}
+
+.bg-neutral-200 {
+  background-color: #D4D3D9 !important;
+}
+
+.text-neutral-200 {
+  color: #D4D3D9 !important;
+}
+
+.border-neutral-200 {
+  border-color: #D4D3D9 !important;
+}
+
+.bg-neutral-0 {
+  background-color: #FFFFFF !important;
+}
+
+.text-neutral-0 {
+  color: #FFFFFF !important;
+}
+
+.border-neutral-0 {
+  border-color: #FFFFFF !important;
+}
+
+.bg-orange-500 {
+  background-color: #FF820A !important;
+}
+
+.text-orange-500 {
+  color: #FF820A !important;
+}
+
+.border-orange-500 {
+  border-color: #FF820A !important;
+}
+
+.bg-blue-500 {
+  background-color: #4658D9 !important;
+}
+
+.text-blue-500 {
+  color: #4658D9 !important;
+}
+
+.border-blue-500 {
+  border-color: #4658D9 !important;
+}
+
+.bg-blue-700 {
+  background-color: #2B19BC !important;
+}
+
+.text-blue-700 {
+  color: #2B19BC !important;
+}
+
+.border-blue-700 {
+  border-color: #2B19BC !important;
+}
+
+.app {
+  background: #00212C;
+  min-height: 100vh;
+  padding: 2rem;
+  color: #FFFFFF;
+  font-family: "Inter", sans-serif;
+}
+.app__title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+.search input {
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: #302F4A;
+  color: #FFFFFF;
+  flex: 1;
+  max-width: 300px;
+}
+.search button {
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: #4658D9;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.search button:hover {
+  background: #2B19BC;
+}
+
+.weather-card {
+  background: linear-gradient(135deg, #4658D9, #2B19BC);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.weather-card__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.weather-card__location h2 {
+  font-size: 1.5rem;
+}
+.weather-card__location p {
+  font-size: 0.875rem;
+  color: #D4D3D9;
+}
+.weather-card__temp {
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.weather-card__stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.weather-card__stats .stat {
+  background: #262540;
+  border-radius: 0.75rem;
+  padding: 1rem;
   text-align: center;
 }
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+.weather-card__stats .stat p {
+  color: #ACACB7;
+  font-size: 0.75rem;
+}
+.weather-card__stats .stat h3 {
+  font-size: 1.25rem;
 }
 
-body {
-  border: 10px solid blue !important;
+.forecast {
+  margin-bottom: 2rem;
+}
+.forecast__days, .forecast__hours {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 1rem 0;
+}
+.forecast .day, .forecast .hour {
+  background: #262540;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  min-width: 80px;
+  text-align: center;
+}
+.forecast .day p, .forecast .day span, .forecast .hour p, .forecast .hour span {
+  display: block;
+}
+
+.bricolage-light {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.bricolage-regular {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.bricolage-medium {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.bricolage-semibold {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.bricolage-bold {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
 /*# sourceMappingURL=main.css.map */

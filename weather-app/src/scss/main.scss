@@ -1,21 +1,10 @@
-// Main styles for the weather app
-body {
-    font-family: Arial, sans-serif;
-    background-color: #e44a4a;
-    margin: 0;
-    padding: 0;
-}
 
-h1 {
-    text-align: center;
-}
+@import 'components/variables';
+@import 'mixins';
+@import 'components/fonts';
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
+// Components
+// @import 'components/header';
+// @import 'components/weather-card';
+// @import 'components/forecast';
 
-body {
-    border: 10px solid blue !important;
-}
