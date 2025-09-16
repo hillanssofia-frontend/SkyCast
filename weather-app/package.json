@@ -8,7 +8,6 @@
     "start": "live-server src",
     "sass": "sass --watch src/scss:dist",
     "dev": "live-server"
-    
   },
   "dependencies": {
     "axios": "^0.21.1"
