@@ -1,74 +1,58 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Weather App</title>
-<link rel="stylesheet" href="app/main.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="app/main.css">
 </head>
-
 <body>
-  
-    <main>
-        <div id="weather-container">
-       <div class="app">
-  <h1 class="app__title">How’s the sky looking today?</h1>
+  <main>
+    <div class="app">
+      <h1 class="app__title">How’s the sky looking today?</h1>
 
-  <!-- Search -->
-  <div class="search">
-    <input type="text" placeholder="Search for a place..." />
-    <button>Search</button>
-  </div>
-
-  <!-- Main Card -->
-  <div class="weather-card">
-    <div class="weather-card__main">
-      <div class="weather-card__location">
-        <h2>Berlin, Germany</h2>
-        <p>Tuesday, Aug 5, 2025</p>
+      <!-- Search -->
+      <div class="search">
+        <input type="text" id="search-input" placeholder="Search for a place..." />
+        <button id="search-btn">Search</button>
       </div>
-      <div class="weather-card__temp">
-        <span class="weather-card__icon">☀️</span>
-        <span class="weather-card__value">20°</span>
-      </div>
-    </div>
 
-    <!-- Extra Info -->
-    <div class="weather-card__stats">
-      <div class="stat"><p>Feels Like</p><h3>18°</h3></div>
-      <div class="stat"><p>Humidity</p><h3>46%</h3></div>
-      <div class="stat"><p>Wind</p><h3>14 km/h</h3></div>
-      <div class="stat"><p>Precipitation</p><h3>0 mm</h3></div>
-    </div>
-  </div>
-
-  <!-- Forecasts -->
-  <div class="forecast">
-    <h2>Daily forecast</h2>
-    <div class="forecast__days">
-      <div class="day"><p>Tue</p><span>🌧️</span><p>20° / 14°</p></div>
-      <div class="day"><p>Wed</p><span>☁️</span><p>21° / 15°</p></div>
-      <div class="day"><p>Thu</p><span>☀️</span><p>24° / 14°</p></div>
-      <!-- more days -->
-    </div>
-  </div>
-
-  <!-- Hourly -->
-  <div class="forecast forecast--hourly">
-    <h2>Hourly forecast</h2>
-    <div class="forecast__hours">
-      <div class="hour"><span>3 PM</span><span>🌥️</span><span>20°</span></div>
-      <div class="hour"><span>4 PM</span><span>⛅</span><span>20°</span></div>
-      <div class="hour"><span>5 PM</span><span>☀️</span><span>20°</span></div>
-      <!-- more hours -->
-    </div>
-  </div>
-</div>
-
+      <!-- Main Weather Card -->
+      <div class="weather-card">
+        <div class="weather-card__main">
+          <div class="weather-card__location">
+            <h2 id="location">--</h2>
+            <p id="date">--</p>
+          </div>
+          <div class="weather-card__temp">
+            <span id="icon"><img src="images/icon-sunny.webp" alt="Sunny"></span>
+            <span id="temperature">--°</span>
+          </div>
         </div>
-    </main>
-    <!-- <script src="js/main.js"></script> -->
-</body>
 
+        <!-- Extra Info -->
+        <div class="weather-card__stats">
+          <div class="stat"><p>Feels Like</p><h3 id="feels-like">--</h3></div>
+          <div class="stat"><p>Humidity</p><h3 id="humidity">--</h3></div>
+          <div class="stat"><p>Wind</p><h3 id="wind">--</h3></div>
+          <div class="stat"><p>Precipitation</p><h3 id="precipitation">--</h3></div>
+        </div>
+      </div>
+
+      <!-- Forecast -->
+      <div class="forecast">
+        <h2>Daily Forecast</h2>
+        <div class="forecast__days" id="daily-forecast"></div>
+      </div>
+
+      <div class="forecast forecast--hourly">
+        <h2>Hourly Forecast</h2>
+        <div class="forecast__hours" id="hourly-forecast"></div>
+      </div>
+    </div>
+  </main>
+
+<script src="/src/js/config.js"></script>
+<script src="/src/js/main.js"></script>
+</body>
 </html>

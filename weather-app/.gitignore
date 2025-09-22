@@ -1,0 +1,5 @@
+# local config with API key
+/src/js/config.js
+.env
+node_modules/
+dist/
