@@ -9,6 +9,7 @@
         font-size: 1.5rem;
         color: $primary-color;
         margin-bottom: 8px;
+        font-family: $font-bricolage;
     }
 
     &__temperature {
@@ -27,4 +28,8 @@
         height: 50px;
         margin: 10px 0;
     }
+.img-icon{
+    width: 60px;
+    height: 60px;
+}
 }

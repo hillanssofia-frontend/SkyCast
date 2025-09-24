@@ -1,1 +1,17 @@
-/* This file is intentionally left blank. */
+.forecast {
+    width: 100%;
+    
+    .forecast__days {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        
+        .img-icon {
+            width: 100%;
+            max-width: 100px;
+            height: auto;
+            display: block;
+            object-fit: contain;
+        }
+    }
+}
