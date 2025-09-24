@@ -99,7 +99,7 @@ function updateUI(city, country, current, forecast) {
     dailyForecastEl.innerHTML += `
       <div class="day">
         <p>${day}</p>
-        <img src="${iconPath}" alt="${condition}" />
+        <img src="${iconPath}" class="width-60" alt="${condition}" />
         <p>${Math.round(max)}° / ${Math.round(min)}°</p>
       </div>
     `;
@@ -117,7 +117,9 @@ function updateUI(city, country, current, forecast) {
       return `
         <div class="hour">
           <span>${time}:00</span>
-          <img src="${iconPath}" alt="${condition}" />
+          <img src = "${iconPath}"
+          class = "width-60"
+          alt = "${condition}" / >
           <span>${Math.round(h.main.temp)}°</span>
         </div>
       `;

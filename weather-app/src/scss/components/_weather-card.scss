@@ -1,35 +1,35 @@
-.weather-card {
-    background-color: $card-background-color;
-    border-radius: 8px;
-    padding: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+// .weather-card {
+//     background-color: $card-background-color;
+//     border-radius: 8px;
+//     padding: 16px;
+//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+//     text-align: center;
 
-    &__title {
-        font-size: 1.5rem;
-        color: $primary-color;
-        margin-bottom: 8px;
-        font-family: $font-bricolage;
-    }
+//     &__title {
+//         font-size: 1.5rem;
+//         color: $primary-color;
+//         margin-bottom: 8px;
+//     }
 
-    &__temperature {
-        font-size: 2rem;
-        font-weight: bold;
-        color: $temperature-color;
-    }
+//     &__temperature {
+//         font-size: 2rem;
+//         font-weight: bold;
+//         color: $temperature-color;
+//     }
 
-    &__description {
-        font-size: 1rem;
-        color: $description-color;
-    }
+//     &__description {
+//         font-size: 1rem;
+//         color: $description-color;
+//     }
 
-    &__icon {
-        width: 50px;
-        height: 50px;
-        margin: 10px 0;
-    }
-.img-icon{
-    width: 60px;
-    height: 60px;
-}
-}
+//     &__icon {
+//         width: 50px;
+//         height: 50px;
+//         margin: 10px 0;
+//     }
+//     .icon{
+//         img{
+//             width:50%
+//         }
+//     }
+// }

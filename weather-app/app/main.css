@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
 .bg-neutral-900 {
   background-color: #00212C !important;
 }
@@ -131,6 +132,11 @@
   margin-bottom: 2rem;
 }
 
+.width-60 {
+  width: 60px;
+  height: 60px;
+}
+
 .search {
   display: flex;
   justify-content: center;
@@ -212,17 +218,75 @@
   overflow-x: auto;
   padding: 1rem 0;
 }
-.forecast .day, .forecast .hour {
+.forecast .day,
+.forecast .hour {
   background: #262540;
   border-radius: 0.75rem;
   padding: 1rem;
   min-width: 80px;
   text-align: center;
 }
-.forecast .day p, .forecast .day span, .forecast .hour p, .forecast .hour span {
+.forecast .day p,
+.forecast .day span,
+.forecast .hour p,
+.forecast .hour span {
   display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected ";".\a    \2577 \a 14 \2502  body{\a    \2502      ^\a    \2575 \a   src/scss/main.scss 14:5  root stylesheet';
 }
+
+.forecast__days .img-icon {
+  width: 34px;
+  height: 34px;
+  display: block;
+  margin: 0 auto 0.5rem;
+  object-fit: contain;
+}
+
+.forecast__hours .img-icon {
+  width: 28px;
+  height: 28px;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.bricolage-light {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.bricolage-regular {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.bricolage-medium {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.bricolage-semibold {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.bricolage-bold {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/*# sourceMappingURL=main.css.map */

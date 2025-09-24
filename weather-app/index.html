@@ -1,73 +1,88 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Weather App</title>
   <link rel="stylesheet" href="app/main.css">
 </head>
+
 <body>
-<main>
-  <div class="app">
-    <h1 class="app__title bricolage-bold">How’s the sky looking today?</h1>
+  <main>
+    <div class="app">
+      <h1 class="app__title bricolage-bold">How’s the sky looking today?</h1>
 
-    <!-- Search -->
-    <div class="search">
-      <input type="text" id="search-input" placeholder="Search for a place..." />
-      <button id="search-btn">Search</button>
-    </div>
-
-    <div class="app__content">
-      <!-- Left: Main Weather + Daily Forecast -->
-      <div class="app__left">
-        <!-- Main Weather Card -->
-        <div class="weather-card">
-          <div class="weather-card__main">
-            <div class="weather-card__location">
-              <h2 id="location">Berlin, Germany</h2>
-              <p id="date">Tuesday, Aug 5, 2025</p>
-            </div>
-            <div class="weather-card__temp">
-              <img class="img-icon" id="icon" src="images/icon-sunny.webp" alt="Sunny" />
-              <span id="temperature">20°</span>
-            </div>
-          </div>
-
-          <!-- Extra Info -->
-          <div class="weather-card__stats">
-            <div class="stat"><p>Feels Like</p><h3 id="feels-like">18°</h3></div>
-            <div class="stat"><p>Humidity</p><h3 id="humidity">46%</h3></div>
-            <div class="stat"><p>Wind</p><h3 id="wind">14 km/h</h3></div>
-            <div class="stat"><p>Precipitation</p><h3 id="precipitation">0 mm</h3></div>
-          </div>
-        </div>
-
-        <!-- Daily Forecast -->
-        <div class="forecast">
-          <h2>Daily forecast</h2>
-          <div class="forecast__days" id="daily-forecast"></div>
-        </div>
+      <!-- Search -->
+      <div class="search">
+        <input type="text" id="search-input" placeholder="Search for a place..." />
+        <button id="search-btn">Search</button>
       </div>
 
-      <!-- Right: Hourly Forecast -->
-      <div class="app__right">
-        <div class="forecast forecast--hourly">
-          <div class="forecast__header">
-            <h2>Hourly forecast</h2>
-            <select id="day-select">
-              <option>Tuesday</option>
-              <option>Wednesday</option>
-            </select>
+      <div class="app__content">
+        <!-- Left: Main Weather + Daily Forecast -->
+        <div class="app__left">
+          <!-- Main Weather Card -->
+          <div class="weather-card">
+            <div class="weather-card__main">
+              <div class="weather-card__location">
+                <h2 id="location">Berlin, Germany</h2>
+                <p id="date">Tuesday, Aug 5, 2025</p>
+              </div>
+              <div class="weather-card__temp">
+                <img class="img-icon width-60" id="icon" src="images/icon-sunny.webp" alt="Sunny" />
+                <span id="temperature">20°</span>
+              </div>
+            </div>
+
+            <!-- Extra Info -->
+            <div class="weather-card__stats">
+              <div class="stat">
+                <p>Feels Like</p>
+                <h3 id="feels-like">18°</h3>
+              </div>
+              <div class="stat">
+                <p>Humidity</p>
+                <h3 id="humidity">46%</h3>
+              </div>
+              <div class="stat">
+                <p>Wind</p>
+                <h3 id="wind">14 km/h</h3>
+              </div>
+              <div class="stat">
+                <p>Precipitation</p>
+                <h3 id="precipitation">0 mm</h3>
+              </div>
+            </div>
           </div>
-          <div class="forecast__hours" id="hourly-forecast"></div>
+
+          <!-- Daily Forecast -->
+          <div class="forecast">
+            <h2>Daily forecast</h2>
+            <div class="forecast__days" id="daily-forecast"></div>
+          </div>
+        </div>
+
+        <!-- Right: Hourly Forecast -->
+        <div class="app__right">
+          <div class="forecast forecast--hourly">
+            <div class="forecast__header">
+              <h2>Hourly forecast</h2>
+              <select id="day-select">
+                <option>Tuesday</option>
+                <option>Wednesday</option>
+              </select>
+            </div>
+            <div class="forecast__hours" id="hourly-forecast"></div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</main>
+  </main>
 
 
-<script src="/src/js/config.js"></script>
-<script src="/src/js/main.js"></script>
+  <script src="/src/js/config.js"></script>
+  <script src="/src/js/main.js"></script>
 </body>
+
 </html>

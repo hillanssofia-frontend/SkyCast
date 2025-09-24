@@ -12,6 +12,11 @@
   }
 }
 
+.width-60 {
+  width: 60px;
+  height: 60px;
+}
+
 // Search
 .search {
   display: flex;
@@ -61,6 +66,7 @@
     h2 {
       font-size: 1.5rem;
     }
+
     p {
       font-size: 0.875rem;
       color: $neutral-200;
@@ -90,6 +96,7 @@
         color: $neutral-300;
         font-size: 0.75rem;
       }
+
       h3 {
         font-size: 1.25rem;
       }
@@ -101,22 +108,47 @@
 .forecast {
   margin-bottom: 2rem;
 
-  &__days, &__hours {
+  &__days,
+  &__hours {
     display: flex;
     gap: 1rem;
     overflow-x: auto;
     padding: 1rem 0;
   }
 
-  .day, .hour {
+  .day,
+  .hour {
     background: $neutral-800;
     border-radius: 0.75rem;
     padding: 1rem;
     min-width: 80px;
     text-align: center;
 
-    p, span {
+    p,
+    span {
       display: block;
     }
+  }
+}
+
+// Fix oversized daily icons
+.forecast__days {
+  .img-icon {
+    width: 34px;
+    height: 34px;
+    display: block;
+    margin: 0 auto 0.5rem;
+    object-fit: contain;
+  }
+}
+
+// Optional: hourly icons a bit smaller
+.forecast__hours {
+  .img-icon {
+    width: 28px;
+    height: 28px;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
   }
 }
