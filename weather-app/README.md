@@ -1,6 +1,46 @@
+SkyCast ☀️🌧️🌩️
+
+SkyCast is a simple weather application that fetches and displays current conditions and forecasts using the OpenWeather API
+.
+It is built with HTML, Sass (SCSS), and Vanilla JavaScript.
+
+🚀 Features
+
+Search by city name to get weather details.
+
+Displays current temperature, feels like, humidity, wind speed, and precipitation.
+
+Shows a 5-day forecast grouped by day with min/max temperatures.
+
+Displays an hourly forecast (next 18 hours).
+
+Condition-based icons (sun, rain, clouds, snow, etc.).
+
 # Weather Application
 
 This is a simple weather application that fetches and displays weather data using a weather API. The application is built with HTML, CSS (using Sass), and JavaScript.
+Setup Instructions
+
+Clone the repository
+
+git clone <repository-url>
+cd weather-app
+
+
+Install dependencies
+
+npm install
+
+
+Add your API key
+Create or edit src/js/config.js:
+
+window.OPENWEATHER_API_KEY = "your_api_key_here";
+
+
+Start the development server (Vite)
+
+npm run dev
 
 ## Project Structure
 
