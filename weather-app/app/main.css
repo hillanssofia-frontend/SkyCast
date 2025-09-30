@@ -132,7 +132,7 @@
   --r-xl: 18px;
   --r-lg: 14px;
   --r-md: 10px;
-  --shadow: 0 10px 30px rgba(0, 0, 0, .45), 0 2px 8px rgba(0, 0, 0, .35);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.45), 0 2px 8px rgba(0, 0, 0, 0.35);
 }
 
 * {
@@ -455,6 +455,7 @@ button,
 select,
 input {
   outline: none;
+  border: none;
 }
 
 :focus-visible {
@@ -500,6 +501,36 @@ input {
   font-weight: 700;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+}
+
+.app__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.units__dropdown {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #252a45;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 12px;
+}
+
+.units__dropdown select {
+  background: #252a45;
+  border: none;
+  color: #fff;
+}
+
+.units__dropdown option {
+  border: none;
+  outline: none;
+}
+
+.units__dropdown:hover {
+  border: 2px solid #fff;
 }
 
 /*# sourceMappingURL=main.css.map */
