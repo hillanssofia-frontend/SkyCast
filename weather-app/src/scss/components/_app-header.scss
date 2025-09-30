@@ -1,0 +1,30 @@
+.app__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.units__dropdown {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #252a45;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 12px;
+
+}
+
+.units__dropdown select {
+  background: #252a45;
+  border: none;
+  color: #fff;
+}
+
+.units__dropdown option {
+  border: none;
+  outline: none;
+}
+
+.units__dropdown:hover {
+  border: 2px solid #fff;
+}

@@ -126,3 +126,6 @@ function updateUI(city, country, current, forecast) {
     })
     .join("");
 }
+
+const ddlUnits = document.getElementById("ddl__units");
+ddlUnits.addEventListener("change", getGeoData);

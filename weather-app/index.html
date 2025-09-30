@@ -1,88 +1,135 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="app/main.css" />
+    <!-- Axios-Library CDN Link -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Weather App</title>
-  <link rel="stylesheet" href="app/main.css">
-</head>
+  <body>
+    <main>
+      <!-- Units
 
-<body>
-  <main>
-    <div class="app">
-      <h1 class="app__title bricolage-bold">How’s the sky looking today?</h1>
+  Switch to Imperial/Metric
 
-      <!-- Search -->
-      <div class="search">
-        <input type="text" id="search-input" placeholder="Search for a place..." />
-        <button id="search-btn">Search</button>
-      </div>
+  Temperature
 
-      <div class="app__content">
-        <!-- Left: Main Weather + Daily Forecast -->
-        <div class="app__left">
-          <!-- Main Weather Card -->
-          <div class="weather-card">
-            <div class="weather-card__main">
-              <div class="weather-card__location">
-                <h2 id="location">Berlin, Germany</h2>
-                <p id="date">Tuesday, Aug 5, 2025</p>
-              </div>
-              <div class="weather-card__temp">
-                <img class="img-icon width-60" id="icon" src="images/icon-sunny.webp" alt="Sunny" />
-                <span id="temperature">20°</span>
-              </div>
-            </div>
+  Celsius (°C)
+  Fahrenheit (°F)
 
-            <!-- Extra Info -->
-            <div class="weather-card__stats">
-              <div class="stat">
-                <p>Feels Like</p>
-                <h3 id="feels-like">18°</h3>
-              </div>
-              <div class="stat">
-                <p>Humidity</p>
-                <h3 id="humidity">46%</h3>
-              </div>
-              <div class="stat">
-                <p>Wind</p>
-                <h3 id="wind">14 km/h</h3>
-              </div>
-              <div class="stat">
-                <p>Precipitation</p>
-                <h3 id="precipitation">0 mm</h3>
-              </div>
-            </div>
+  Wind Speed
+
+  km/h
+  mph
+
+  Precipitation
+
+  Millimeters (mm)
+  Inches (in) -->
+
+      <div class="app">
+        <header class="app__header">
+          <div class="logo__container">
+            <a href="/">
+              <img
+                src="/images/logo.svg"
+                alt="Weather Now Home"
+                width="197"
+                height="40"
+              />
+            </a>
           </div>
-
-          <!-- Daily Forecast -->
-          <div class="forecast">
-            <h2>Daily forecast</h2>
-            <div class="forecast__days" id="daily-forecast"></div>
+          <div class="units__dropdown">
+            <img src="/images/icon-units.svg" alt="icon units" />
+            <select name="units" id="ddl__units">
+              <option value="">Units</option>
+              <option value="F">Imperial</option>
+              <option value="C">Celsius</option>
+            </select>
           </div>
+        </header>
+        <h1 class="app__title bricolage-bold">How’s the sky looking today?</h1>
+
+        <!-- Search -->
+        <div class="search">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search for a place..."
+          />
+          <button id="search-btn">Search</button>
         </div>
 
-        <!-- Right: Hourly Forecast -->
-        <div class="app__right">
-          <div class="forecast forecast--hourly">
-            <div class="forecast__header">
-              <h2>Hourly forecast</h2>
-              <select id="day-select">
-                <option>Tuesday</option>
-                <option>Wednesday</option>
-              </select>
+        <div class="app__content">
+          <!-- Left: Main Weather + Daily Forecast -->
+          <div class="app__left">
+            <!-- Main Weather Card -->
+            <div class="weather-card">
+              <div class="weather-card__main">
+                <div class="weather-card__location">
+                  <h2 id="location">Berlin, Germany</h2>
+                  <p id="date">Tuesday, Aug 5, 2025</p>
+                </div>
+                <div class="weather-card__temp">
+                  <img
+                    class="img-icon width-60"
+                    id="icon"
+                    src="images/icon-sunny.webp"
+                    alt="Sunny"
+                  />
+                  <span id="temperature">20°</span>
+                </div>
+              </div>
+
+              <!-- Extra Info -->
+              <div class="weather-card__stats">
+                <div class="stat">
+                  <p>Feels Like</p>
+                  <h3 id="feels-like">18°</h3>
+                </div>
+                <div class="stat">
+                  <p>Humidity</p>
+                  <h3 id="humidity">46%</h3>
+                </div>
+                <div class="stat">
+                  <p>Wind</p>
+                  <h3 id="wind">14 km/h</h3>
+                </div>
+                <div class="stat">
+                  <p>Precipitation</p>
+                  <h3 id="precipitation">0 mm</h3>
+                </div>
+              </div>
             </div>
-            <div class="forecast__hours" id="hourly-forecast"></div>
+
+            <!-- Daily Forecast -->
+            <div class="forecast">
+              <h2>Daily forecast</h2>
+              <div class="forecast__days" id="daily-forecast"></div>
+            </div>
+          </div>
+
+          <!-- Right: Hourly Forecast -->
+          <div class="app__right">
+            <div class="forecast forecast--hourly">
+              <div class="forecast__header">
+                <h2>Hourly forecast</h2>
+                <select id="day-select">
+                  <option>Tuesday</option>
+                  <option>Wednesday</option>
+                </select>
+              </div>
+              <div class="forecast__hours" id="hourly-forecast"></div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-
-  <script src="/src/js/config.js"></script>
-  <script src="/src/js/main.js"></script>
-</body>
-
+    <script src="/src/js/config.js"></script>
+    <script src="/src/js/main.js"></script>
+  </body>
 </html>
