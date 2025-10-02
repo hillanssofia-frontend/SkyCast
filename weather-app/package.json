@@ -3,15 +3,19 @@
   "version": "1.0.0",
   "description": "A simple weather application that fetches and displays weather data.",
   "main": "src/js/main.js",
+  "homepage": "https://hillanssofia-frontend.github.io/SkyCast",
   "scripts": {
     "build": "sass src/scss/main.scss app/main.css",
     "sass": "sass --watch src/scss:app",
-    "dev": "live-server"
+    "dev": "live-server",
+     "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "axios": "^0.21.1"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "live-server": "^1.2.2",
     "sass": "^1.92.1"
   },
