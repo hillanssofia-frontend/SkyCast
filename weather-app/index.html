@@ -5,31 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Weather App</title>
     <link rel="stylesheet" href="app/main.css" />
-    <!-- Axios-Library CDN Link -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
   </head>
 
   <body>
     <main>
-      <!-- Units
-
-  Switch to Imperial/Metric
-
-  Temperature
-
-  Celsius (°C)
-  Fahrenheit (°F)
-
-  Wind Speed
-
-  km/h
-  mph
-
-  Precipitation
-
-  Millimeters (mm)
-  Inches (in) -->
-
       <div class="app">
         <header class="app__header">
           <div class="logo__container">
@@ -42,15 +21,54 @@
               />
             </a>
           </div>
+
           <div class="units__dropdown">
-            <img src="/images/icon-units.svg" alt="icon units" />
-            <select name="units" id="ddl__units">
-              <option value="">Units</option>
-              <option value="F">Imperial</option>
-              <option value="C">Celsius</option>
-            </select>
+            <button id="unitBtn" class="btn">
+              <img src="/images/icon-units.svg" alt="" /> Units ▾
+            </button>
+            <div id="unitMenu" class="dropdown">
+              <button class="row row--primary" data-action="switch-system">
+                <span
+                  >Switch to <strong data-system-label>Imperial</strong></span
+                >
+              </button>
+              <div class="section">
+                <div class="heading">Temperature</div>
+                <button class="row" data-group="temp" data-value="c">
+                  Celsius (°C)
+                  <img class="check" src="/images/icon-checkmark.svg" alt="" />
+                </button>
+                <button class="row" data-group="temp" data-value="f">
+                  Fahrenheit (°F)
+                  <img class="check" src="/images/icon-checkmark.svg" alt="" />
+                </button>
+              </div>
+              <div class="section">
+                <div class="heading">Wind Speed</div>
+                <button class="row" data-group="wind" data-value="kmh">
+                  km/h
+                  <img class="check" src="/images/icon-checkmark.svg" alt="" />
+                </button>
+                <button class="row" data-group="wind" data-value="mph">
+                  mph
+                  <img class="check" src="/images/icon-checkmark.svg" alt="" />
+                </button>
+              </div>
+              <div class="section">
+                <div class="heading">Precipitation</div>
+                <button class="row" data-group="precip" data-value="mm">
+                  Millimeters (mm)
+                  <img class="check" src="/images/icon-checkmark.svg" alt="" />
+                </button>
+                <button class="row" data-group="precip" data-value="in">
+                  Inches (in)
+                  <img class="check" src="/images/icon-checkmark.svg" alt="" />
+                </button>
+              </div>
+            </div>
           </div>
         </header>
+
         <h1 class="app__title bricolage-bold">How’s the sky looking today?</h1>
 
         <!-- Search -->
